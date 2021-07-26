@@ -1,0 +1,27 @@
+{
+  "name" : "LinkedIn Toolkit by Abhay",
+  "short_name": "LinkedIn Toolkit",
+  "version" : "1.0.0",
+  "description" : "This a Chrome Extension based small Toolkit developed by Abhay Gupta for sending, accepting and Cancelling Connections on Linked In.",
+  "manifest_version" : 2,
+  "icons": {
+    "128": "icons/icon128.png"
+  },
+  "content_scripts" : [
+      {
+      "matches": [
+        "*://*/*"
+      ],
+      "js" : ["content.js"] 
+      }
+  ],
+  "browser_action" : {
+    "default_popup" : "popup.html",
+    "default_title" : "LinkedIn Toolkit",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png"
+    }
+  },
+  "permissions" : ["activeTab","<all_urls>","tabs"]
+}

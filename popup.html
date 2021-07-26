@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINKED IN TOOLKIT</title>
+    <link rel="stylesheet" href="background.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <button id="go-to-homepage">All TOOLS</button>
+        <h1>LINKED IN TOOLKIT</h1>
+    <div class="container-popUp">
+        <div id="extn-popup-homepage" class="options">
+            <p>This a Small Toolkit developed by Abhay Gupta for sending, accepting and Cancelling Connections on Linked In.</p>
+            <div class="main-area">
+                <button id="auto-request" >Auto Send Requests</button>
+                <button id="auto-accept">Auto Accept Requests</button>
+                <button id="auto-delete-pending">Delete Pending Requests By You</button>
+            </div>
+        </div>
+
+        <div id="extn-popup-auto-request" class="options hide">
+            <h2>SEND REQUESTS</h2>
+            <p>Enter amount of requets to send[MAX is 30], and hit on below Button</p>
+            <div class="main-area">
+                <input type="number" id="send-number" value="10" placeholder="Number of Requests to Send" min="1" max="30">
+                <button id="perform-auto-request" class="perform" >Send Requests</button>
+            </div>
+        </div>
+
+        <div id="extn-popup-auto-accept" class="options hide">
+            <h2>ACCEPT REQUESTS</h2>
+            <p>Click on below button to accept all pending requests.</p>
+            <div class="main-area">
+                <button id="perform-auto-accept" class="perform">Accept All</button>
+            </div>
+        </div>
+
+        <div id="extn-popup-auto-reject-pending" class="options hide">
+            <h2>REJECT PENDING REQUESTS</h2>
+            <p>Click on below button to cancel all pending requests by you.</p>
+            <div class="main-area">
+                <button id="perform-auto-reject-pending"  class="perform">Reject All Pending by you</button>
+            </div>
+        </div>
+
+        <div id="extn-popup-inprogress" class="options hide">
+            <img src="loading.gif" alt="Loading...">
+            <h3>All Done. Process Initiated</h3>
+        </div>
+
+
+
+    </div>
+    <footer>
+        Made with 🤍 by &nbsp; <a id="contact-link" style="text-decoration:none; color:white;" href="https://github.com/abhaygupta08"><u> Abhay</u></a>
+    </footer>
+    <script src="popup.js"></script>
+</body>
+
+</html>
